@@ -96,11 +96,12 @@ input {
 
 #text{
     display: flex;
-    margin-left: -700px;
-    margin-top: 500px;
+    margin-left: -670px;
+    margin-top: 480px;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    font-size: 15px;
 }
 
 #text1 a {
@@ -123,47 +124,47 @@ footer {
     width: 100%;
     background-color: #f0f0f0; /* Фон может быть другим по вашему выбору */
     padding: 10px 0;
-    margin-bottom: -120px;
+    margin-bottom: -150px;
     
 }
 
 #language-list {
-    text-align: center;
+    text-align: left;
+    margin-left: 265px;
 }
 
 #language-list ul {
     list-style: none;
     padding: 0;
+    color: gray;
 }
 
 #language-list li {
     display: inline;
-    margin: 0 10px;
+    margin: 0 5px;
 }
 
 #language-list li a {
     text-decoration: none;
-    color: #333; /* Цвет ссылки */
+    color: gray;
 }
 
 #language-list li a:hover {
     text-decoration: underline;
 }
 
-#additional-info {
-    border-top: 1px solid #ccc; /* Adding a line above additional info */
-    padding: 20px 0; /* Adjust padding as needed */
-}
-
-#additional-info p {
-    text-align: center; /* Center align the text */
-    margin: 0; /* Remove default margin */
+.line {
+    border-top: 1px solid #ccc; /* You can adjust the color and style */
+    margin-left: 270px;
+    width: 72%; /* Adjust the margin as needed */
 }
 
 #footer-links ul {
     list-style-type: none;
     padding: 0;
-    text-align: center;
+    text-align: left;
+    margin-left: 270px;
+    margin-right: 100px;
 }
 
 #footer-links li {
@@ -173,7 +174,7 @@ footer {
 
 #footer-links a {
     text-decoration: none;
-    color: #333333; /* Link color */
+    color: gray; /* Link color */
 }
 
 #footer-links a:hover {

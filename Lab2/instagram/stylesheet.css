@@ -64,10 +64,23 @@ input {
 #login:hover {
     background-color: #135e96;
 }
-#ili{
-    font-size: 17px;
-    text-align: center;
+.line-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
+
+.line {
+    flex: 1;
+    border-bottom: 1px solid rgb(194, 191, 191);
+}
+
+#ili {
+    margin: 0 15px;
+    color: gray;
+}
+
 
 #EnterByF {
     display: flex;
