@@ -1,0 +1,100 @@
+.top{
+    display: flex;
+    background-color: #101820;
+    border: 0px solid;
+    border-radius: 200px;
+    padding: 1.5%;
+    margin-top: -1%;
+    margin-left: -1.4%;
+    margin-right: -1.4%;
+}
+#your{
+    margin-left: 45%;
+    font-family: system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+    margin-top: 0.1%;
+    color: white;
+    font-size: 19px;
+
+}
+#todo{
+    margin-left: 0.3%;
+    margin-top: 0.2%;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: Poppins,sans-serif;
+    color: white;
+}
+
+#dateInfo{
+    margin-top: 6%;
+    margin-left: 30%;
+}
+.mid{
+    margin-top: 1%;
+    margin-left: 30%;
+    border: 2px solid #101820;
+    border-radius: 6px;
+    background-color: #FEE715;
+    margin-right: 30%;
+}
+
+#taskInput{
+    margin-top: 3%;
+    margin-bottom: 2%;
+    width: 80%;
+    border-color: #101820;
+    margin-left: 5%;
+}
+#addTaskBtn {
+    padding: 2px 8px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-left: 1%;
+}
+  
+#addTaskBtn:hover {
+    background-color: #256728;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task {
+    align-items: baseline;
+    padding-left: 10px;
+    padding-top: 20px;
+    border: 2px solid #101820;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-left: 5%;
+    margin-right: 13.5%; /* Change the distance between tasks */
+}
+
+    
+.delete-btn{
+    padding: 2px 9px;
+    font-size: 18px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-left: 490px;
+}
+
+#buttons{
+    position: relative;
+    margin-top: -2%
+}
+#prevDateBtn{
+    margin-left: 25%;
+}
+#nextDateBtn{
+    margin-left: 47%;
+}
