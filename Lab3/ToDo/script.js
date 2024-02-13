@@ -6,21 +6,14 @@ document.addEventListener('DOMContentLoaded', function () {
     const prevDateBtn = document.getElementById('prevDateBtn');
     const nextDateBtn = document.getElementById('nextDateBtn');
 
-    // Function to get today's date and day of the week
     let currentDate = new Date();
 
-    // Function to display current date and tasks
     function displayDateAndTasks() {
-        // Display current date
         const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
         const formattedDate = currentDate.toLocaleDateString('en-US', options);
         dateInfo.textContent = formattedDate;
-
-        // Display tasks for the current date (implementation needed)
-        // You might need to store tasks for each date in an object or array
     }
 
-    // Add task function
     function addTask() {
         const taskText = taskInput.value.trim();
         if (taskText !== '') {
@@ -35,7 +28,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    // Delete task function
     function deleteTask(e) {
         if (e.target.classList.contains('delete-btn')) {
             e.target.parentElement.remove();
@@ -47,9 +39,6 @@ document.addEventListener('DOMContentLoaded', function () {
             addTask();
         }
     });
-    // Event listeners
-    addTaskBtn.addEventListener('click', addTask);
-    taskList.addEventListener('click', deleteTask);
 
     prevDateBtn.addEventListener('click', function () {
         currentDate.setDate(currentDate.getDate() - 1);
@@ -61,6 +50,8 @@ document.addEventListener('DOMContentLoaded', function () {
         displayDateAndTasks();
     });
 
-    // Call getTodayDate function to display today's date and day of the week
+    addTaskBtn.addEventListener('click', addTask);
+    taskList.addEventListener('click', deleteTask);
+
     displayDateAndTasks();
 });
