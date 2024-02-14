@@ -1,12 +1,13 @@
+ 
 .top{
     display: flex;
     background-color: #101820;
     border: 0px solid;
-    border-radius: 200px;
+    border-radius: 400px;
     padding: 1.5%;
     margin-top: -1%;
-    margin-left: -1.4%;
-    margin-right: -1.4%;
+    margin-right: -3%;
+    margin-left: -3%;
 }
 #your{
     margin-left: 45%;
@@ -36,7 +37,9 @@
     border-radius: 6px;
     background-color: #FEE715;
     margin-right: 30%;
+    box-shadow: 8px 8px 5px rgb(180, 185, 72);
 }
+
 
 #taskInput{
     margin-top: 3%;
@@ -76,25 +79,44 @@ ul {
     margin-right: 13.5%; /* Change the distance between tasks */
 }
 
-    
+.done-btn{
+    margin-left: 102%;
+    margin-bottom: 10%;
+    border: none;
+    background-color: #FEE715;
+    font-size: 17px;
+}  
+
 .delete-btn{
+    display: flex;
     padding: 2px 9px;
     font-size: 18px;
-    background-color: red;
+    background-color: rgb(220, 51, 51);
     color: white;
     border: none;
     border-radius: 12px;
     cursor: pointer;
-    margin-left: 490px;
+    margin-left: 525px;
+    margin-top: -15%;
 }
-
+.delete-btn:hover{
+    background-color: rgb(117, 19, 19)
+}
 #buttons{
     position: relative;
-    margin-top: -2%
+    margin-top: -2%; 
 }
 #prevDateBtn{
     margin-left: 25%;
+    background-color: rgb(39, 148, 232)
+}
+#prevDateBtn:hover{
+    background-color: rgb(44, 18, 218)
 }
 #nextDateBtn{
     margin-left: 47%;
+    background-color:  rgb(39, 148, 232)
+}
+#nextDateBtn:hover{
+    background-color: rgb(44, 18, 218)
 }

@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
             taskItem.classList.add('task');
             taskItem.innerHTML = `
                 <span>${taskText}</span>
+                <button class="done-btn">✅</button>
                 <button class="delete-btn">-</button>
             `;
             taskList.appendChild(taskItem);
@@ -31,6 +32,13 @@ document.addEventListener('DOMContentLoaded', function () {
     function deleteTask(e) {
         if (e.target.classList.contains('delete-btn')) {
             e.target.parentElement.remove();
+        }
+    }
+
+    function markAsDone(e) {
+        if (e.target.classList.contains('done-btn')) {
+            const taskSpan = e.target.parentElement.querySelector('span');
+            taskSpan.style.textDecoration = 'line-through';
         }
     }
 
@@ -52,6 +60,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     addTaskBtn.addEventListener('click', addTask);
     taskList.addEventListener('click', deleteTask);
+    taskList.addEventListener('click', markAsDone);
 
     displayDateAndTasks();
 });
