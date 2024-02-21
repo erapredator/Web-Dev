@@ -1,0 +1,37 @@
+<!-- product.component.html -->
+<h2>Products</h2>
+
+<div *ngFor="let product of products">
+
+  <h3>
+    <a
+      [title]="product.name + ' details'"
+      [routerLink]="['/products', product.id]">
+      {{ product.name }}
+    </a>
+  </h3>
+
+  <img id = "imgs" [src]="getImageUrl(product.id)" />
+
+  <p *ngIf="product.description">
+    Description: {{ product.description }}
+  </p>
+
+  <p>
+    Rating: {{ product.rating }}
+  </p>
+
+  <button type="button" (click)="shareViaWhatsapp(product)" id="b1">
+    Share via WhatsApp
+  </button>
+
+  <button type="button" (click)="shareViaTelegram(product)" id="b2">
+    Share via Telegram
+  </button>
+
+  <app-product-alerts
+    [product]="product" 
+    (notify)="onNotify()">
+  </app-product-alerts>
+
+</div>
