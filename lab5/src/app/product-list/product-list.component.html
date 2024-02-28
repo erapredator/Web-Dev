@@ -1,0 +1,32 @@
+<h2>Products</h2>
+<ng-container *ngIf="products.length > 0">
+<div class="gg">
+  <div *ngFor="let product of products" class="product">
+    <h3>
+      <a [title]="product.name + ' details'" href="{{product.href}}">  
+        {{ product.name }}
+      </a>
+    </h3>
+    <div class="image-gallery">
+      <button *ngIf="product.currentImageIndex > 0"(click)="prevImage(product)" type="button">&#60;</button>
+      <img [src]="product.img[product.currentImageIndex]" alt="Product Image">
+      <button *ngIf="product.currentImageIndex < product.img.length - 1" (click)="nextImage(product)" type="button">&#62;</button>
+    </div>
+    <p *ngIf="product.description" class="discp">Description: {{ product.description }}</p>
+    <span><button (click)="incrementLikes(product)" *ngIf="!product.liked" style="color: rgb(0, 0, 0);">{{product.like}}🖒</button></span>
+    <span><button (click)="incrementLikes(product)" *ngIf="product.liked" style="color: rgb(187, 199, 13);">{{product.like}}👍</button></span>
+    <p *ngIf="product.description" class = "rating"><b>Rating: {{product.rating}} ★</b></p>
+
+
+    <a [href]="getWhatsAppShareLink(product.href)" target="_blank"><button type="button" class = "whatsapp">Share on WhatsApp</button></a>
+    <p></p>
+    <a [href]="getTelegramShareLink(product.href)" target="_blank"><button type="button" class = "telegram">Share on Telegram</button></a>
+    <app-product-alerts
+      [product]="product" 
+      (notify)="onNotify()">
+    </app-product-alerts>
+    <button (click)="removeProduct(product) " class="removeButton">Remove</button>
+    <button type="button" (click)="addToCart(product)">Buy</button>
+  </div>
+</div>
+</ng-container>
