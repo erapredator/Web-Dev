@@ -1,0 +1,32 @@
+.header{
+    background-color: #282828;
+    margin: -1%;
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+    padding: 5px;
+    margin: 15px;
+}
+  
+  li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  a {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration:overline;
+    color: #3500d3;
+  }
+  
+  router-outlet {
+    display: block;
+    margin-top: 20px; /* Расстояние между верхней частью страницы и содержимым */
+  }

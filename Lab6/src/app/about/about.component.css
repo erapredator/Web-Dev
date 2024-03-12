@@ -1,0 +1,18 @@
+.about-container {
+    text-align: left;
+    padding: 100px;
+    color: white;
+    background-color: #190061;
+  }
+
+  h1{
+    font-size: 45px;
+  }
+  ul{
+    font-size: 20px;
+  }
+
+  p{
+    font-size: 20px;
+  }
+  
