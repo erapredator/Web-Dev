@@ -23,7 +23,6 @@ export class AlbumsComponent implements OnInit {
 
   deleteAlbum(albumId: number) {
     this.albumsService.deleteAlbum(albumId).subscribe(() => {
-      // Remove the deleted album from the list
       this.albums = this.albums.filter(album => album.id !== albumId);
     });
   }
