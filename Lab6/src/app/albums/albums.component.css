@@ -44,3 +44,18 @@
     background-color: #3500d3;
     color: white;
   }
+
+  .create{
+    margin-bottom: 1%;
+    margin-left: 1%;
+  }
+  .create-button{
+    margin-left: 1%;
+    color:rgb(34, 255, 0);
+    border: solid 1px;
+    border-color: gray;
+  }
+  .create-button:hover{
+    background-color: rgb(34, 255, 0);
+    color: white;
+  }

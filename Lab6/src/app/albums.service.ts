@@ -30,4 +30,8 @@ export class AlbumsService {
     const updateUrl = `${this.albumsUrl}/${albumId}`;
     return this.http.put<any>(updateUrl, { title: newTitle });
   }
+
+  createAlbum(newAlbum: any): Observable<any> {
+    return this.http.post<any>(this.albumsUrl, newAlbum);
+  }
 }
